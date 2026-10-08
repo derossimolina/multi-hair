@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: multi-hair
+    runtime: static
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false

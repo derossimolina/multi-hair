@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Hair · da pergunta à técnica</title>
+  <meta name="description" content="Guia interativo de técnicas estatísticas (diagrama do Hair) com exemplos em Python, R, jamovi e JASP.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M7 22V10l9 8 9-8v12' stroke='white' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* aplica o tema antes de pintar, para não piscar */
+    try { var t = localStorage.getItem("hair-tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#app">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="topo-in">
+      <a class="marca" href="#/" aria-label="Multi-Hair, página inicial"><span class="marca-logo" aria-hidden="true">M</span><span>Multi-Hair</span></a>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="#/passo0" data-r="passo0">Passo 0</a>
+        <a href="#/assistente" data-r="assistente">Assistente</a>
+        <a href="#/tecnicas" data-r="tecnicas">Técnicas</a>
+        <a href="#/h0" data-r="h0">H₀</a>
+        <a href="#/exercicios" data-r="exercicios">Exercícios</a>
+        <a href="#/roteiro" data-r="roteiro">Roteiro</a>
+        <a href="#/preparacao" data-r="preparacao">Preparação</a>
+      </nav>
+      <button id="tema" class="btn-icone" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"><noscript><p class="noscript">Este site precisa de JavaScript para funcionar.</p></noscript></main>
+
+  <footer class="rodape">
+    <p>Adaptado do diagrama de seleção de técnicas de <em>Hair et al., Análise Multivariada de Dados</em>, cap. 1, e do guia de estudo JASP/jamovi (α = 0,05). Exemplos na base <em>iFood Marketing Campaign</em> (Kaggle); a base incluída aqui é <strong>sintética</strong> e serve só para os códigos rodarem.</p>
+    <p>Os menus do jamovi seguem o guia; os do JASP foram compilados à parte e podem variar com a versão.</p>
+  </footer>
+
+  <script src="js/data/bivariadas.js"></script>
+  <script src="js/data/multivariadas.js"></script>
+  <script src="js/data/pressupostos.js"></script>
+  <script src="js/data/conteudo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
